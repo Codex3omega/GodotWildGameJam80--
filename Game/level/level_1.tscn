@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://dkujppxjwk4cu"]
+[gd_scene load_steps=11 format=3 uid="uid://dkujppxjwk4cu"]
 
 [ext_resource type="Texture2D" uid="uid://sosvbh2w5cil" path="res://level/green_tile.png" id="1_omx5w"]
+[ext_resource type="PackedScene" uid="uid://btj0icy8hb5pl" path="res://player.tscn" id="2_lx8gb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
 size = Vector2(19, 654.5)
@@ -94,7 +95,7 @@ scale = Vector2(1.84, 1.53478)
 shape = SubResource("RectangleShape2D_ig7tw")
 
 [node name="tree3" type="StaticBody2D" parent="trees"]
-position = Vector2(306, 317)
+position = Vector2(291, 382)
 metadata/_edit_group_ = true
 
 [node name="ColorRect" type="ColorRect" parent="trees/tree3"]
@@ -243,3 +244,6 @@ color = Color(0.152941, 0.152941, 0.152941, 1)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="trench/centre"]
 position = Vector2(367.5, 25)
 shape = SubResource("RectangleShape2D_5vw27")
+
+[node name="player" parent="." instance=ExtResource("2_lx8gb")]
+position = Vector2(523, 345)
