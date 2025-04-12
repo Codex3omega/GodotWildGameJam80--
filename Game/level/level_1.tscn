@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://dkujppxjwk4cu"]
 
 [ext_resource type="Texture2D" uid="uid://sosvbh2w5cil" path="res://level/green_tile.png" id="1_omx5w"]
-[ext_resource type="PackedScene" uid="uid://btj0icy8hb5pl" path="res://player.tscn" id="2_lx8gb"]
+[ext_resource type="PackedScene" uid="uid://btj0icy8hb5pl" path="res://player/player.tscn" id="2_lx8gb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
 size = Vector2(19, 654.5)
