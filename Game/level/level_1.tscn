@@ -80,7 +80,7 @@ scale = Vector2(1.84, 1.53478)
 shape = SubResource("RectangleShape2D_ig7tw")
 
 [node name="tree2" type="StaticBody2D" parent="trees"]
-position = Vector2(783, 318)
+position = Vector2(640, 283)
 metadata/_edit_group_ = true
 
 [node name="ColorRect" type="ColorRect" parent="trees/tree2"]
@@ -94,7 +94,7 @@ scale = Vector2(1.84, 1.53478)
 shape = SubResource("RectangleShape2D_ig7tw")
 
 [node name="tree3" type="StaticBody2D" parent="trees"]
-position = Vector2(432, 271)
+position = Vector2(306, 317)
 metadata/_edit_group_ = true
 
 [node name="ColorRect" type="ColorRect" parent="trees/tree3"]
@@ -131,6 +131,76 @@ offset_bottom = 40.0
 color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree5"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="tree6" type="StaticBody2D" parent="trees"]
+position = Vector2(338, 131)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree6"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree6"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="tree7" type="StaticBody2D" parent="trees"]
+position = Vector2(846, 347)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree7"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree7"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="tree8" type="StaticBody2D" parent="trees"]
+position = Vector2(472, 244)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree8"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree8"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="tree9" type="StaticBody2D" parent="trees"]
+position = Vector2(1089, 274)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree9"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree9"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="tree10" type="StaticBody2D" parent="trees"]
+position = Vector2(51, 143)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree10"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree10"]
 position = Vector2(20, 19.8261)
 scale = Vector2(1.84, 1.53478)
 shape = SubResource("RectangleShape2D_ig7tw")
