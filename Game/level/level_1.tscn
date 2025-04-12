@@ -1,0 +1,249 @@
+[gd_scene load_steps=11 format=3 uid="uid://dkujppxjwk4cu"]
+
+[ext_resource type="Texture2D" uid="uid://sosvbh2w5cil" path="res://level/green_tile.png" id="1_omx5w"]
+[ext_resource type="PackedScene" uid="uid://btj0icy8hb5pl" path="res://player/player.tscn" id="2_lx8gb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
+size = Vector2(19, 654.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
+size = Vector2(19, 654.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
+size = Vector2(16.5, 1165.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
+size = Vector2(16.5, 1165.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ig7tw"]
+size = Vector2(21.7391, 26.289)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
+size = Vector2(155, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_272bh"]
+size = Vector2(155, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5vw27"]
+size = Vector2(735, 50)
+
+[node name="level_1" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1157.0
+offset_bottom = 648.0
+texture = ExtResource("1_omx5w")
+
+[node name="right_boundary" type="Area2D" parent="."]
+position = Vector2(1164, 105)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="right_boundary"]
+position = Vector2(3, 219.75)
+shape = SubResource("RectangleShape2D_0xm2m")
+
+[node name="left_boundary" type="Area2D" parent="."]
+position = Vector2(-13, 105)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="left_boundary"]
+position = Vector2(3, 219.75)
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="top_boundary" type="Area2D" parent="."]
+position = Vector2(107, -7)
+rotation = 4.71239
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="top_boundary"]
+position = Vector2(1.75001, 475.25)
+shape = SubResource("RectangleShape2D_1bvp3")
+
+[node name="bottom_boundary" type="Area2D" parent="."]
+position = Vector2(107, 658)
+rotation = 4.71239
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bottom_boundary"]
+position = Vector2(1.75001, 475.25)
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="trees" type="Node" parent="."]
+
+[node name="tree" type="StaticBody2D" parent="trees"]
+position = Vector2(131, 235)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="tree2" type="StaticBody2D" parent="trees"]
+position = Vector2(640, 283)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree2"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree2"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="tree3" type="StaticBody2D" parent="trees"]
+position = Vector2(291, 382)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree3"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree3"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="tree4" type="StaticBody2D" parent="trees"]
+position = Vector2(947, 235)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree4"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree4"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="tree5" type="StaticBody2D" parent="trees"]
+position = Vector2(694, 129)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree5"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree5"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="tree6" type="StaticBody2D" parent="trees"]
+position = Vector2(338, 131)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree6"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree6"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="tree7" type="StaticBody2D" parent="trees"]
+position = Vector2(846, 347)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree7"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree7"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="tree8" type="StaticBody2D" parent="trees"]
+position = Vector2(472, 244)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree8"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree8"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="tree9" type="StaticBody2D" parent="trees"]
+position = Vector2(1089, 274)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree9"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree9"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="tree10" type="StaticBody2D" parent="trees"]
+position = Vector2(51, 143)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="trees/tree10"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.0918398, 0.440392, 1.92523e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trees/tree10"]
+position = Vector2(20, 19.8261)
+scale = Vector2(1.84, 1.53478)
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="trench" type="Node2D" parent="."]
+position = Vector2(0, 455)
+
+[node name="left" type="StaticBody2D" parent="trench"]
+
+[node name="left" type="ColorRect" parent="trench/left"]
+offset_right = 155.0
+offset_bottom = 50.0
+color = Color(0.151276, 0.151276, 0.151276, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trench/left"]
+position = Vector2(77.5, 25)
+shape = SubResource("RectangleShape2D_7mycd")
+
+[node name="right" type="StaticBody2D" parent="trench"]
+position = Vector2(997, 0)
+metadata/_edit_group_ = true
+
+[node name="right" type="ColorRect" parent="trench/right"]
+offset_right = 155.0
+offset_bottom = 50.0
+color = Color(0.151276, 0.151276, 0.151276, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trench/right"]
+position = Vector2(77.5, 25)
+shape = SubResource("RectangleShape2D_272bh")
+
+[node name="centre" type="StaticBody2D" parent="trench"]
+position = Vector2(210, 0)
+
+[node name="centre" type="ColorRect" parent="trench/centre"]
+offset_right = 735.0
+offset_bottom = 50.0
+color = Color(0.152941, 0.152941, 0.152941, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trench/centre"]
+position = Vector2(367.5, 25)
+shape = SubResource("RectangleShape2D_5vw27")
+
+[node name="player" parent="." instance=ExtResource("2_lx8gb")]
+position = Vector2(523, 345)
