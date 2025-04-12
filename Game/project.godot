@@ -28,6 +28,14 @@ right_click={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_2="Wall"
+2d_physics/layer_3="Edge of Screen"
+2d_physics/layer_4="Player"
+2d_physics/layer_5="Soldier"
+2d_physics/layer_6="Object"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
